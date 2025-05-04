@@ -1,336 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>SmartOffice - Pembelajaran Microsoft</title>
-  <meta name="description" content="Website pembelajaran Microsoft Word, Excel, dan PowerPoint.">
-  <meta name="keywords" content="Microsoft, Word, Excel, PowerPoint, Pembelajaran">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartOffice - Belajar Microsoft Office</title>
+  <meta name="description" content="Belajar Microsoft Word, Excel, dan PowerPoint dengan mudah.">
+  <meta name="keywords" content="Microsoft Office, Word, Excel, PowerPoint, Belajar">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- Vendor CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- Main CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body class="index-page">
+<body>
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/logo.png" alt="">
-        <h1 class="sitename">SmartOffice</h1>
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top shadow-sm" style="background-color: #ffffff;">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="#" class="logo d-flex align-items-center text-decoration-none">
+        <img src="assets/img/logo.png" alt="SmartOffice Logo" style="height: 40px;">
+        <h1 class="ms-2 mb-0 fs-4 fw-bold text-dark">SmartOffice</h1>
       </a>
-      <!-- menu bagian navigasi -->
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li class="dropdown">
-            <a href="#" class="menu-link" data-menu="word"><span>Word</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="materi1.pdf" target="_blank">Materi 1</a></li> <!-- Tautan ke file materi 1 -->
-              <li><a href="materi2.pdf" target="_blank">Materi 2</a></li> <!-- Tautan ke file materi 2 -->
-              <li><a href="https://youtu.be/OqsM5kQYjTc?si=RzZzEMbtbNPf_AzN" target="_blank">Tutorial YouTube</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="menu-link" data-menu="excel"><span>Excel</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#materi1">Materi 1</a></li>
-              <li><a href="#materi2">Materi 2</a></li>
-              <li><a href="https://youtu.be/OqsM5kQYjTc?si=RzZzEMbtbNPf_AzN" target="_blank">Tutorial YouTube</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="menu-link" data-menu="powerpoint"><span>PowerPoint</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#materi1">Materi 1</a></li>
-              <li><a href="#materi2">Materi 2</a></li>
-              <li><a href="https://youtu.be/OqsM5kQYjTc?si=RzZzEMbtbNPf_AzN" target="_blank">Tutorial YouTube</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-      <a class="btn-getstarted" href="#about">Get Started</a>
 
+      <!-- Navbar -->
+      <nav class="d-none d-lg-block">
+        <ul class="d-flex list-unstyled gap-4 mb-0 align-items-center">
+          <li><a href="/" class="text-dark text-decoration-none fw-medium">Home</a></li>
+          <li><a href="#about" class="text-dark text-decoration-none fw-medium">About</a></li>
+          <li><a href="#tutorial" class="text-dark text-decoration-none fw-medium">Tutorial</a></li>
+          <li><a href="#contact" class="text-dark text-decoration-none fw-medium">Contact</a></li>
+          <li class="dropdown">
+            <a href="materi" class="text-dark text-decoration-none fw-medium" aria-expanded="false">
+              Materi
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Call to Action -->
+      <a href="/admin" class="btn btn-primary ms-3 d-none d-lg-inline-block">Get Started</a>
+
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="collapse d-lg-none bg-white shadow-sm" id="mobileNav">
+      <ul class="list-unstyled p-3 mb-0">
+        <li><a href="#hero" class="d-block py-2 text-dark text-decoration-none">Home</a></li>
+        <li><a href="#about" class="d-block py-2 text-dark text-decoration-none">About</a></li>
+        <li><a href="#tutorial" class="d-block py-2 text-dark text-decoration-none">Tutorial</a></li>
+        <li><a href="#contact" class="d-block py-2 text-dark text-decoration-none">Contact</a></li>
+        <li class="py-2">
+          <strong class="text-dark">Materi</strong>
+          <ul class="list-unstyled ps-3">
+            <li><a href="#word" class="text-dark text-decoration-none">Microsoft Word</a></li>
+            <li><a href="#excel" class="text-dark text-decoration-none">Microsoft Excel</a></li>
+            <li><a href="#powerpoint" class="text-dark text-decoration-none">Microsoft PowerPoint</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </header>
 
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-      <div class="hero-bg">
-        <img src="assets/img/hero-bg-light.webp" alt="">
+  <!-- Hero Section -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="hero-bg position-absolute w-100 h-100" style="z-index: -1;">
+      <img src="assets/img/hero-bg-light.webp" class="w-100 h-100" style="object-fit: cover;" alt="Background">
+    </div>
+    <div class="container text-center">
+      <h1 data-aos="fade-up">Welcome to <span class="text-primary">SmartOffice</span></h1>
+      <p data-aos="fade-up" data-aos-delay="100">Belajar Microsoft Office dengan mudah dan cepat</p>
+      <img src="assets/img/hero-services-img.webp" class="img-fluid mt-0" alt="Services" data-aos="zoom-out" data-aos-delay="300" style="max-width: 400px; height: auto;">
+      <div class="d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-delay="200">
+        <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn btn-outline-primary">
+          <i class="bi bi-play-circle"></i> Watch Video
+        </a>
       </div>
-      <div class="container text-center">
-        <div class="d-flex flex-column justify-content-center align-items-center">
-          <h1 data-aos="fade-up">Welcome to <span>SmartOffice</span></h1>
-          <p data-aos="fade-up" data-aos-delay="100">Quickly start your project now and set the stage for success<br></p>
-          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#about" class="btn-get-started">Get Started</a>
-            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-          </div>
-          <img src="assets/img/hero-services-img.webp" class="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="assets/img/smartofficer.png" alt="Tentang SmartOffice" class="img-fluid rounded shadow">
         </div>
-      </div>
-    </section><!-- /Hero Section -->
-
-    <!-- Introduction Section -->
-    <section id="introduction" class="introduction section">
-      <div class="container">
-        <h2>Pengenalan</h2>
-        <p id="intro-text">Pilih menu di atas untuk mempelajari lebih lanjut tentang Microsoft Word, Excel, dan PowerPoint.</p>
-      </div>
-    </section><!-- /Introduction Section -->
-
-    <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section light-background">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-              <div>
-                <h4 class="title"><a href="#microsoft-word" class="stretched-link">Microsoft Word</a></h4>
-                <p class="description">Pelajari cara menggunakan Microsoft Word dengan efektif dan efisien.</p>
-              </div>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-              <div>
-                <h4 class="title"><a href="#microsoft-excel" class="stretched-link">Microsoft Excel</a></h4>
-                <p class="description">Temukan fitur-fitur canggih di Microsoft Excel untuk analisis data.</p>
-              </div>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-              <div>
-                <h4 class="title"><a href="#powerpoint" class="stretched-link">PowerPoint</a></h4>
-                <p class="description">Buat presentasi yang menarik dengan Microsoft PowerPoint.</p>
-              </div>
-            </div>
-          </div>
-          <!-- End Service Item -->
-        </div>
-      </div>
-    </section>
-    <!-- /Featured Services Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p class="who-we-are">Who We Are</p>
-            <h3>Unleashing Potential with Creative Strategy</h3>
-            <p class="fst-italic">
-              Kami adalah platform pembelajaran yang membantu Anda menguasai Microsoft Office dengan cara yang menyenangkan dan interaktif.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-            </ul>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-          </div>
-
-          <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
-            <div class="row gy-4">
-              <div class="col-lg-6">
-                <img src="assets/img/about-company-1.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-6">
-                <div class="row gy-4">
-                  <div class="col-lg-12">
-                    <img src="assets/img/about-company-2.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="col-lg-12">
-                    <img src="assets/img/about-company-3.jpg" class="img-fluid" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- /About Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-lg-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt"></i>
-              <h3>Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
-            </div>
-          </div><!-- End Info Item -->
-          <div class="col-lg-3 col-md-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone"></i>
-              <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
-            </div>
-          </div><!-- End Info Item -->
-          <div class="col-lg-3 col-md-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope"></i>
-              <h3>Email Us</h3>
-              <p>info@example.com</p>
-            </div>
-          </div><!-- End Info Item -->
-        </div>
-      </div>
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">SmartOffice</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+        <div class="col-md-6">
+          <h2 class="mb-3">Tentang <span class="text-primary">SmartOffice</span></h2>
+          <p class="lead">SmartOffice adalah platform pembelajaran modern untuk menguasai <strong>Microsoft Word</strong>, <strong>Excel</strong>, dan <strong>PowerPoint</strong>. Kami hadir dengan materi interaktif, panduan langkah demi langkah, dan video tutorial berkualitas.</p>
+          <ul class="list-unstyled mt-4">
+            <li><i class="bi bi-check-circle text-success me-2"></i> Materi Lengkap & Praktis</li>
+            <li><i class="bi bi-check-circle text-success me-2"></i> Belajar Kapan Saja, di Mana Saja</li>
+            <li><i class="bi bi-check-circle text-success me-2"></i> Desain Modern & User Friendly</li>
           </ul>
-        </div>
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email" placeholder="Your Email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
         </div>
       </div>
     </div>
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">SmartOffice</strong><span>All Rights Reserved</span></p>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Dist<a href="https://themewagon.com">ThemeWagon</a>
+  </section>
+
+
+  <!-- Tutorial Section -->
+  <section id="tutorial" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-5 fw-bold">Tutorial <span class="text-primary">Microsoft Office</span></h2>
+      <div class="row g-4">
+        <!-- Word -->
+        <div class="col-md-4" id="excel">
+          <div class="card h-70 border-0 shadow-lg rounded-4 hover-shadow transition">
+            <div class="card-body d-flex flex-column">
+              <img src="assets/img/word.png" class="img-fluid rounded-4 mb-3 d-block mx-auto" alt="Microsoft Excel" style="max-height: 200px;">
+              <h5 class="card-title fw-semibold">Microsoft Word</h5>
+              <p class="card-text flex-grow-1">Pelajari membuat dokumen profesional dan manfaatkan fitur-fitur Word secara maksimal.</p>
+              <a href="<?= base_url('materi-detail/Word') ?>" class="btn btn-outline-primary mt-auto">Pelajari</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Excel -->
+        <div class="col-md-4" id="excel">
+          <div class="card h-70 border-0 shadow-lg rounded-4 hover-shadow transition">
+            <div class="card-body d-flex flex-column">
+              <img src="assets/img/excel.png" class="img-fluid rounded-4 mb-3 d-block mx-auto" alt="Microsoft Excel" style="max-height: 200px;">
+              <h5 class="card-title fw-semibold">Microsoft Excel</h5>
+              <p class="card-text flex-grow-1">Pelajari rumus, pivot table, visualisasi data, dan tips Excel untuk produktivitas maksimal.</p>
+              <a href="<?= base_url('materi-detail/Excel') ?>" class="btn btn-outline-success mt-auto">Pelajari</a>
+            </div>
+          </div>
+        </div>
+        <!-- PowerPoint -->
+        <div class="col-md-4" id="excel">
+          <div class="card h-70 border-0 shadow-lg rounded-4 hover-shadow transition">
+            <div class="card-body d-flex flex-column">
+              <img src="assets/img/ppt.png" class="img-fluid rounded-4 mb-3 d-block mx-auto" alt="Microsoft Excel" style="max-height: 200px;">
+              <h5 class="card-title fw-semibold">Microsoft PowerPoint</h5>
+              <p class="card-text flex-grow-1">Pelajari teknik desain presentasi, animasi, dan storytelling visual dengan PowerPoint.</p>
+              <a href="<?= base_url('materi-detail/PowerPoint') ?>" class="btn btn-outline-danger mt-auto">Pelajari</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-gradient" style="background: linear-gradient(to right, #e0eafc, #cfdef3);">
+    <div class="container" data-aos="fade-up">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold display-6">Terhubung dengan <span class="text-primary">SmartOffice</span></h2>
+        <p class="lead text-muted">Kami senang mendengar dari Anda! Hubungi kami kapan saja melalui platform di bawah ini.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10 d-flex justify-content-center flex-wrap gap-4">
+          <!-- Social Link Card -->
+          <a href="mailto:smartoffice@gmail.com" target="_blank" class="contact-card text-decoration-none text-dark">
+            <i class="bi bi-envelope-fill fs-1 mb-2"></i>
+            <div>Email</div>
+          </a>
+          <a href="https://wa.me/6281234567890" target="_blank" class="contact-card text-success text-decoration-none">
+            <i class="bi bi-whatsapp fs-1 mb-2"></i>
+            <div>WhatsApp</div>
+          </a>
+          <a href="https://instagram.com/smartoffice" target="_blank" class="contact-card text-danger text-decoration-none">
+            <i class="bi bi-instagram fs-1 mb-2"></i>
+            <div>Instagram</div>
+          </a>
+          <a href="https://facebook.com/smartoffice" target="_blank" class="contact-card text-primary text-decoration-none">
+            <i class="bi bi-facebook fs-1 mb-2"></i>
+            <div>Facebook</div>
+          </a>
+          <a href="https://youtube.com/@smartoffice" target="_blank" class="contact-card text-danger text-decoration-none">
+            <i class="bi bi-youtube fs-1 mb-2"></i>
+            <div>YouTube</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-black pt-3 pb-3 border-top" style="background-color:rgb(219, 233, 255); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <!-- Brand & Copyright -->
+        <div class="col-md-6 text-center text-md-start">
+          <h5 class="fw-bold mb-2">SmartOffice</h5>
+          <p class="mb-0 small">&copy; 2025 SmartOffice. Semua Hak Dilindungi.</p>
+        </div>
+
+        <!-- Links -->
+        <div class="col-md-6 text-center text-md-end">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item mx-2">
+              <a href="#" class="footer-link">Kontak</a>
+            </li>
+            <li class="list-inline-item mx-2">
+              <a href="#" class="footer-link">Kebijakan Privasi</a>
+            </li>
+            <li class="list-inline-item mx-2">
+              <a href="#" class="footer-link">Syarat & Ketentuan</a>
+            </li>
+          </ul>
+          <!-- Social Icons (optional) -->
+          <div>
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
+  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Initialize AOS -->
   <script>
-    // Smooth scrolling for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-
-        if (targetElement) {
-          targetElement.scrollIntoView({
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
-
-    // Update introduction text based on menu selection
-    document.querySelectorAll('.menu-link').forEach(link => {
-      link.addEventListener('click', function() {
-        const menu = this.getAttribute('data-menu');
-        let introText = '';
-
-        switch (menu) {
-          case 'word':
-            introText = 'Microsoft Word adalah aplikasi pengolah kata yang memungkinkan Anda untuk membuat, mengedit, dan memformat dokumen dengan mudah.';
-            break;
-          case 'excel':
-            introText = 'Microsoft Excel adalah aplikasi spreadsheet yang digunakan untuk analisis data, perhitungan, dan visualisasi data.';
-            break;
-          case 'powerpoint':
-            introText = 'Microsoft PowerPoint adalah aplikasi presentasi yang memungkinkan Anda untuk membuat presentasi yang menarik dengan berbagai fitur.';
-            break;
-          default:
-            introText = 'Pilih menu di atas untuk mempelajari lebih lanjut tentang Microsoft Word, Excel, dan PowerPoint.';
-        }
-
-        document.getElementById('intro-text').innerText = introText;
-      });
+    AOS.init({
+      once: true,
+      duration: 1000,
     });
   </script>
 
